@@ -5,6 +5,7 @@ A Python-based application for managing movie records and user reviews through a
 
 📌 Features
 Add new movies to the system
+
 Write and store user reviews
 Calculate average ratings for each movie
 Search movie records by title or other fields
