@@ -1,5 +1,9 @@
 #PROJECT 3 LIAM LIDDY
-#Write movie records 
+#Write movie records
+
+import csv
+import os
+
 def write_records():
     print("\nWrite Records:\n")
     while True:
@@ -17,7 +21,6 @@ def write_records():
 
 #Ask the user to write reviews for records 
 def write_review_csv():
-    import csv
     print("\nWrite Reviews:\n")
     while True:
         with open("movie_records.txt","r") as f:
@@ -68,7 +71,6 @@ def display_movies():
             
 #Display reviews/averages to the user
 def display_reviews():
-    import csv
     print("\nMovie Reviews:\n")
     movies = {}
     ratings = {}
@@ -127,7 +129,6 @@ def movie_search():
                     
 #Ask user if they would like to modify one of the records
 def modify_record():
-    import os
     print("\nMovie Genre Modification:\n")
 
     found = False
@@ -168,7 +169,6 @@ def modify_record():
     
 #Ask user what record they would like to delete
 def delete_record():
-    import os
     print("\nMovie Deletion:\n")
     found = False
 
@@ -243,13 +243,7 @@ def main():
 ##      with open("movie_review.csv", "a") as f:
 ##          f.write(f"{movie},{review},{rating}\n")
     
-    write_records()
-    write_review_csv()
-    display_movies()
-    display_reviews()
-    movie_search()
-    modify_record()
-    delete_record()
+ 
     configured_database()
 main()
     
